@@ -1,9 +1,10 @@
 # Smart-Mailbox
 ## 👋 Really Smart Mailbox
 
-This all started when we moved to the country and getting the mail became a war of who/when/how far.  We run a business and getting chevk deposited in a timey manner can mean the difference in making payroll or not.  So there's a vigil of constantly walking the 1/4 mile to the mailbox to see "if" the mail had arrived.  My wife wore me down, and I finally finished the project. it seems to work really, really well, and I solved many of the challenges the vast majority of all other solutions overlooked. namely:
+This all started when we moved to the country and getting the mail became a war of who/when/how far.  We run a business and getting checks deposited in a timely manner can mean the difference in making payroll or not.  So there's a vigil of constantly walking the 1/4 mile to the mailbox to see "if" the mail had arrived.  My wife wore me down, and I finally finished the project. It seems to work really, really well, and I solved many of the challenges the vast majority of all other solutions overlooked. Namely:
+
   - door open/closed monitoring is ineffective.  Both my wife and I put outgoing mail in the box, sometimes multiple times a day. this results in false triggers.
-  - how to duscern between outgoing mail and legitimate delivered mail?
+  - how to discern between outgoing mail and legitimate delivered mail?
   - we have a big mailbox. it holds several packages sometimes. how do you detect a small letter in a big box?
   - the box is 1/4 mile walk. I'm not keen on loRa long range solutions. They over complicate things.
   - Batteries are challenging.  Standard Lithium batteries wont work when its below freezing which it is here 6 mos out of the year.
