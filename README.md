@@ -24,3 +24,4 @@ Fortunately I have Ubiquity AP's on the outside if my shop.  I can barely get a 
 Lithium ion doesnt charge below freezing. LifePO4 batteries do diwn to -40F. So I use 2 single LifePO4 cells in parallel.  After over 2500 cycles theyve dropped from 3.4v to 3.29v. So, really quite good.Time will tell on battery life, but I have a few tricks here that really make a huge difference in extending battry life. Im also planning on adding a camera solar charge panel as soon as the LifePO4 chahrge modules are available again from Adafruit.
 
 Ill expand on each of these areas in the Discussions sections as they all warrant much further deep dives. 
+https://github.com/jazzmonger/Smart-Mailbox/discussions
