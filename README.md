@@ -12,7 +12,7 @@ This all started when we moved to the country and getting the mail became a war 
 So,those are the PRDs and challenges. I'll address each one.
 
 ## Detection:
-I decided to use tof (time of flight) laser distance sensors. Ive had really good luck with them measuring pellet levels in both my pellet stoves. Initially I tried to measure from the top down. this proved impossibke as the resolution wasnt good enough to detect a post card or single letter.  But placed in the bottom so they are covered when there mail and using more than one sensor for a big box proved to be the answer here. These sensors draw some power so I had to figure out a way to put them in standby. Easier said than done.
+I decided to use tof (time of flight) laser distance sensors. Ive had really good luck with them measuring pellet levels in both my pellet stoves. Initially I tried to measure from the top down. this proved impossible as the resolution wasnt good enough to detect a post card or single letter.  But placed in the bottom so they are covered when there mail and using more than one sensor for a big box proved to be the answer here. These sensors draw some power so I had to figure out a way to put them in standby. Easier said than done.
 
 ## Outgoing vs incoming mail: 
 Luckily our route uses the flag on the box to indicate outgoing mail only, so putting a sensor of the flag solves this issue.  Flag upp, theres outgoing mail.  Flag down, there is "potentially" incoming mail.
