@@ -25,8 +25,7 @@ time:
       - logger.log: "-->>Synchronized system clock from HA"
       - if:
           condition:
-            - lambda: return (id(ha_time).now().hour >= 19 ); #&& id(ha_time).now().hour <= 23);
-            #- lambda: return (id(ha_time).now().hour >= 0 && id(ha_time).now().hour <= 2);
+            - lambda: return (id(ha_time).now().hour >= 19 );
           then:
             - delay: 15s
             - logger.log: "-->>Its Night time. Time to sleep a LOOONG time..."        
