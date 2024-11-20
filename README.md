@@ -1,6 +1,12 @@
 # Smart-Mailbox
 ## 👋 Really Smart Mailbox
 
+![image](https://github.com/user-attachments/assets/00bb7c1c-5062-475d-a7af-c85994d48c18)
+![image](https://github.com/user-attachments/assets/d22fc5bf-06ad-4461-b9f1-45b5aef52140)
+![image](https://github.com/user-attachments/assets/7ef88d97-25d6-4b1b-8b45-2d1d94712f97)
+![image](https://github.com/user-attachments/assets/d06128d1-f7f8-444b-920e-5a9b431a2094)
+![image](https://github.com/user-attachments/assets/e15b5274-1175-4aa9-9c47-7a3dac161b37)
+
 This all started when we moved to the country and getting the mail became a war of who/when/how far.  We run a business and getting checks deposited in a timely manner can mean the difference in making payroll or not.  So there's a vigil of constantly walking the 1/4 mile to the mailbox to see "if" the mail had arrived.  My wife wore me down, and I finally finished the project. It seems to work really, really well, and I solved many of the challenges the vast majority of all other solutions overlooked. Namely:
 
   - door open/closed monitoring is ineffective.  Both my wife and I put outgoing mail in the box, sometimes multiple times a day. this results in false triggers.
