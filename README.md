@@ -1,8 +1,7 @@
 # Smart-Mailbox
 ## 👋 Really Smart Mailbox
 
-![image](https://github.com/user-attachments/assets/00bb7c1c-5062-475d-a7af-c85994d48c18)
-![image](https://github.com/user-attachments/assets/d22fc5bf-06ad-4461-b9f1-45b5aef52140)
+![IMG_0898](https://github.com/user-attachments/assets/589818ac-c647-4411-996b-f8bd7c9f2783) ![image](https://github.com/user-attachments/assets/d22fc5bf-06ad-4461-b9f1-45b5aef52140)
 ![image](https://github.com/user-attachments/assets/7ef88d97-25d6-4b1b-8b45-2d1d94712f97)
 ![image](https://github.com/user-attachments/assets/d06128d1-f7f8-444b-920e-5a9b431a2094)
 ![image](https://github.com/user-attachments/assets/e15b5274-1175-4aa9-9c47-7a3dac161b37)
