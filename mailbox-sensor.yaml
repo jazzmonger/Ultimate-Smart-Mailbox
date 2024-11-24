@@ -36,17 +36,14 @@ time:
                 sleep_duration: 50400s # 14 hours
           else:
             - logger.log: "-->>It's not night time yet. No long sleeping"
-            - switch.turn_on: tof_enable1
-            - switch.turn_on: tof_enable2
-            - logger.log: "Turning on & Entering MainLoop for 20s"
+            - logger.log: "Restarting i2c interface"
             - lambda: |-
                 Wire.begin();
-                delay(100);       
-            - delay: 5s                    
+                delay(100);                           
             - lambda: id(mailbox_number_of_cycles) += 1; #keep track of how many auger turns happen and reset if stove lights
             - lambda: id(mailbox_cycle_counter).publish_state(id(mailbox_number_of_cycles)); #publish it to the sensor    
-            - delay: 10s #enough time for sensors to report back 5x
-            - logger.log: "-->>NORMAL daytime Sleeping Enabled"
+            - delay: 20s #enough time for all sensors to report back          
+            - logger.log: "-->>Beginning NORMAL daytime Sleeping for 15 min"
             - deep_sleep.enter:
                 id: deep_sleep_1
                 sleep_duration: 900s #30 min = 1800, 15 min = 900
@@ -74,12 +71,12 @@ wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
   fast_connect: on  
-  #power_save_mode: light
-
+  
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Mailbox-Sensor Fallback Hotspot"
     password: !secret wifi_password
+
 captive_portal:
 logger:
 
@@ -133,7 +130,7 @@ sensor:
     update_interval: ${update_interval}
     timeout: 200us
     long_range: False
-    
+
   - platform: vl53l0x
     name: "Mailbox Letter Distance2"
     id: distance2
@@ -143,13 +140,14 @@ sensor:
       allow_other_uses: true
     timeout: 200us
     update_interval: ${update_interval}
+
   - platform: adc
     name: Mailbox_Batt_Level
     id: battery
     pin: GPIO2
     update_interval: ${update_interval}
     accuracy_decimals: 2
-    attenuation: 11db
+    attenuation: 12db
     unit_of_measurement: "V"
     icon: mdi:battery-medium
     filters:  
@@ -159,8 +157,37 @@ sensor:
           - 1.92 -> 2.9
           - 2.09 -> 3.1
           - 2.23 -> 3.3
-          - 2.50 -> 3.6   
+          - 2.50 -> 3.6
+     
   - platform: wifi_signal
     name: "Mailbox WiFi Signal"
     update_interval: ${update_interval}
+    
+# I may comee back to this MQTT stuff later.       
+# mqtt:
+#   broker: '192.168.1.250'
+#   username: mqtt
+#   password: mypassword
+#   discovery: True
+#   discovery_retain: true
+#   birth_message:
+#     topic: mailbox/availability
+#     payload: online
+#   will_message:
+#     topic: msilbox/availability
+#     payload: offline
+#   on_message:
+#     - topic: mailbox/ota_mode
+#       payload: 'ON'
+#       then:
+#         - logger.log: 'OTA Mode ON - Deep sleep DISABLED'      
+#         - deep_sleep.prevent: deep_sleep_1
+#     - topic: mailbox/ota_mode
+#       payload: 'OFF'
+#       then:
+#         - switch.turn_off: tof_enable1
+#         - switch.turn_off: tof_enable2
+#         - delay: 50ms
+#         - logger.log: 'OTA Mode OFF - Deep sleep ENABLED'      
+#         - deep_sleep.enter: deep_sleep_1
     
