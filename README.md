@@ -23,7 +23,7 @@ I decided to use tof (time of flight) laser distance sensors. Ive had really goo
 Luckily our route uses the flag on the box to indicate outgoing mail only, so putting a sensor of the flag solves this issue.  Flag upp, theres outgoing mail.  Flag down, there is "potentially" incoming mail.
 
 ## Distance to mailbox: 
-Fortunately I have Ubiquity AP's on the outside if my shop.  I can barely get a signal on my iphone standing at my mailbox. Choosing an ESP32 with an external ant connector and using a high gain ant proved the right solution. I have 100% connect rate during each wake cycle.
+I can barely get a wifi signal on my iphone standing at my mailbox. Choosing an ESP32 with an external ant connector and using a high gain ant proved the right solution. I have 100% connect rate during each wake cycle.
 
 ## Battery Choice: 
 Lithium ion batteries don't like to charge when it's below freezing. LifePO4 batteries do, all the way down to -40F. So I use 2 single 1000ah LifePO4 cells in parallel.  After over 2500 cycles they've dropped from 3.4v to 3.29v. So, really quite good.  Time will tell on battery life, but I have a few tricks here that really make a huge difference in extending battery life. Im also planning on adding a 5v/5w camera solar charge panel as soon as the LifePO4 charge modules are available again from Adafruit.
@@ -31,7 +31,6 @@ Lithium ion batteries don't like to charge when it's below freezing. LifePO4 bat
 I might even add a camera inside so the wife can see all the packages she's gotten from Amazon.  Oh wait... That's for me :)
 
 <img width="1019" alt="image" src="https://github.com/user-attachments/assets/dfdec941-0bc4-4731-8959-b0a08b416819">
-
 
 Ill expand on each of these areas in the Discussions sections as they all warrant much further deep dives. 
 https://github.com/jazzmonger/Smart-Mailbox/discussions
