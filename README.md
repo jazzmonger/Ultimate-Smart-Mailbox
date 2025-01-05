@@ -35,3 +35,15 @@ I might even add a camera inside so the wife can see all the packages she's gott
 Ill expand on each of these areas in the Discussions sections as they all warrant much further deep dives. 
 https://github.com/jazzmonger/Smart-Mailbox/discussions
 
+UPDATE:
+The battery lasted a full 6 weeks, even after giving updates every 15 min of every hour during the day and sleeping 14 hours at night.
+
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/5e91798f-1a4c-437a-9105-0fe9d54a78e9" />
+
+So, I added a cheap solar panel from Amazon and a solar chg module from Adafruit.  They both work great & we're back online, hopefully permanently now.
+
+https://www.adafruit.com/product/6091
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/5146d28e-c37b-4a5c-8791-fcbbf8961a29" />
+
+<img width="293" alt="image" src="https://github.com/user-attachments/assets/07a0632d-131b-47ab-ae4f-d1c2834ddd89" />
