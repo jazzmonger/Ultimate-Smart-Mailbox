@@ -47,3 +47,5 @@ https://www.adafruit.com/product/6091
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/5146d28e-c37b-4a5c-8791-fcbbf8961a29" />
 
 <img width="293" alt="image" src="https://github.com/user-attachments/assets/07a0632d-131b-47ab-ae4f-d1c2834ddd89" />
+
+UPDATE: its been 6 months, through both winter and summer and this thing has been rock solid. Happy wife = Happy life!
